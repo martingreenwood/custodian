@@ -45,6 +45,7 @@ if ( ! function_exists( 'custodian_setup' ) ) :
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
 			'menu-1' => esc_html__( 'Primary', 'custodian' ),
+			'menu-2' => esc_html__( 'Footer', 'custodian' ),
 		) );
 
 		/*
@@ -108,19 +109,29 @@ function custodian_widgets_init() {
 add_action( 'widgets_init', 'custodian_widgets_init' );
 
 /**
+ * Embed scripts.
+ */
+function custodian_embed_scripts() {
+?>
+<!-- -->
+<?php
+}
+add_action( 'wp_head', 'custodian_embed_scripts', 99 );
+
+
+/**
  * Enqueue scripts and styles.
  */
 function custodian_scripts() {
 	wp_enqueue_style( 'custodian-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'custodian-map', get_template_directory_uri() . '/assets/cssmap/cssmap-continents/cssmap-continents.css' );
 
 	wp_enqueue_script( 'jquery' );
-	
+	wp_enqueue_script( 'custodian-slick', get_template_directory_uri() . '/assets/slick/slick.min.js', array(), '', true );
+	wp_enqueue_script( 'custodian-map', get_template_directory_uri() . '/assets/cssmap/jquery.cssmap.min.js', array(), '', true );
+	wp_enqueue_script( 'custodian-parallax', get_template_directory_uri() . '/assets/js/parallax.js', array(), '', true );
 	wp_enqueue_script( 'custodian-navigation', get_template_directory_uri() . '/assets/js/navigation.js', array(), '', true );
 	wp_enqueue_script( 'custodian-base', get_template_directory_uri() . '/assets/js/base.js', array(), '', true );
-
-	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-		wp_enqueue_script( 'comment-reply' );
-	}
 }
 add_action( 'wp_enqueue_scripts', 'custodian_scripts' );
 

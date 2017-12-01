@@ -1,0 +1,99 @@
+/*--------------------------------------------------------------
+## Footer
+--------------------------------------------------------------*/
+
+#colophon {
+	padding: 60px 0;
+	background-color: $color__background-footer;
+	color: white;
+
+	.row {
+		margin-bottom: 30px;
+
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+	}
+
+	h3 {
+		font-size: 20px;
+		font-family: Zona Pro Light;
+		text-transform: uppercase;
+		margin-bottom: 15px;
+	}
+
+	p, li, a {
+		font-size: 14px;
+	}
+
+	a {
+		color: $color__brand-primary;
+		text-decoration: none;
+	}
+
+	.footer-logo {
+		
+		img {
+			display: block;
+		}
+	}
+
+	.site-info {
+		
+		hr {
+			float: left;
+			width: 100%;
+			background: white;
+			margin-bottom: 0;
+		}
+	}
+
+	.contact-info {
+
+	}
+
+	.lastest-news {
+
+
+		a {
+			color: white;
+
+			&:hover {
+				color: $color__brand-primary;
+			}
+		}
+		
+	}
+
+	.sub-info {
+
+		.copy {
+			float: left;
+			width: 50%;
+		}
+
+		.footer-nav {
+			float: left;
+			width: 50%;
+			text-align: right;
+
+			ul {
+				margin: 0;
+
+				li {
+					display: inline-block;
+					margin-left: 15px;
+
+					a {
+						color: white;
+						text-decoration: none;
+
+						&:hover {
+							color: #color__brand-primary;
+						}
+					}
+				}
+			}
+		}
+	}
+}

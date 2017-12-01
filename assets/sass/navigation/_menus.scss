@@ -1,8 +1,13 @@
 .main-navigation {
-	clear: both;
 	display: block;
-	float: left;
-	width: 100%;
+	float: right;
+	padding: 23.45px 0;
+
+	-webkit-transition: all .25s linear;
+	   -moz-transition: all .25s linear;
+	    -ms-transition: all .25s linear;
+	     -o-transition: all .25s linear;
+	        transition: all .25s linear;
 
 	ul {
 		display: none;
@@ -17,6 +22,8 @@
 			top: 100%;
 			left: -999em;
 			z-index: 99999;
+			background: $color__brand-primary;
+			padding: 15px;
 
 			ul {
 				left: -999em;
@@ -24,6 +31,12 @@
 			}
 
 			li {
+				margin: 0 0 7px 0;
+
+				&:last-of-type {
+					margin-bottom: 0;
+				}
+
 				&:hover > ul,
 				&.focus > ul {
 					left: 100%;
@@ -52,6 +65,25 @@
 	li {
 		float: left;
 		position: relative;
+		margin: 0 0 0 20px;
+
+		&.menu-item-has-children {
+
+			> a {
+				&:after {
+					content: "";
+					background-image: url(assets/images/down-arrow.svg);
+					background-repeat: no-repeat;
+					background-position: 50% 42%;
+					background-size: 100% auto;
+					width: 12px;
+					height: 22px;
+					display: inline-block;
+					margin-left: 5px;
+					vertical-align: middle;
+				}
+			}
+		}
 
 		&:hover > a,
 		&.focus > a {
@@ -61,6 +93,9 @@
 	a {
 		display: block;
 		text-decoration: none;
+		color: white;
+		text-transform: uppercase;
+		font-family: 'Zona Pro Bold';
 	}
 
 	.current_page_item > a,

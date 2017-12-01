@@ -100,3 +100,60 @@ if ( ! function_exists( 'custodian_entry_footer' ) ) :
 		);
 	}
 endif;
+
+
+// function custodian_custom_post_type()
+// {
+
+// 	register_post_type('sector',
+// 		[
+// 			'labels'      => [
+// 				'name'          => __('Sectors'),
+// 				'singular_name' => __('Sector'),
+// 			],
+// 			'public'      => true,
+// 			'has_archive' => false,
+// 			'menu_icon'   => 'dashicons-admin-page',
+// 			'supports'    => array( 'title', 'thumbnail', 'editor' ),
+// 		]
+// 	);
+// }
+// add_action( 'init', 'custodian_custom_post_type') ;
+
+
+// adds ioption pGE
+if( function_exists('acf_add_options_page') ) {
+ 
+	$option_page = acf_add_options_page(array(
+		'page_title' 	=> 'Theme Settings',
+		'menu_title' 	=> 'Theme Settings',
+		'menu_slug' 	=> 'theme-settings',
+		'capability' 	=> 'edit_posts',
+		'redirect' 	=> false
+	));
+ 
+}
+
+/**
+ * Twitter style dates
+ */
+function ShowDate($date) // $date --> time(); value
+{
+	$stf = 0;
+	$cur_time = time();
+	$diff = $cur_time - $date;
+	$phrase = array('second','minute','hour','day','week','month','year','decade');
+	$length = array(1,60,3600,86400,604800,2630880,31570560,315705600);
+	for($i =sizeof($length)-1; ($i>=0) &&(($no = $diff/$length[$i])<=1); $i--);  if($i<0) $i=0; $_time = $cur_time -($diff%$length[$i]);
+	$no = floor($no); if($no>1) $phrase[$i] .='s'; $value=sprintf("%d %s ",$no,$phrase[$i]);
+	if(($stf == 1) &&($i>= 1) &&(($cur_tm-$_time)>0)) $value .= time_ago($_time);
+	return $value.' ago ';
+} 
+
+function is_tree($pid) {      // $pid = The ID of the page we're looking for pages underneath
+	global $post;         // load details about this page
+	if(is_page()&&($post->post_parent==$pid||is_page($pid))) 
+               return true;   // we're at the page or at a sub page
+	else 
+               return false;  // we're elsewhere
+};

@@ -1,35 +1,50 @@
 <?php
 /**
- * The template for displaying all single posts
+ * The template for displaying all pages
  *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
+ * This is the template that displays all pages by default.
+ * Please note that this is the WordPress construct of pages
+ * and that other 'pages' on your WordPress site may use a
+ * different template.
+ *
+ * @link https://codex.wordpress.org/Template_Hierarchy
  *
  * @package Custodian
  */
 
 get_header(); ?>
+<?php $featureimage = wp_get_attachment_url( get_post_thumbnail_id($post->ID)); ?>
+
+	<section id="featureimage" class="section parallax-window" data-bleed="50" data-parallax="scroll" data-image-src="<?php echo $featureimage; ?>">
+		<div class="caption">
+			<div class="table"> <div class="cell middle">
+				<div class="container">
+					<div class="copy row">
+						<div class="four columns">
+							<h1><?php the_title(  ); ?></h1>
+							<p>Posted on <?php echo get_the_date( ); ?></p>
+						</div>
+					</div>
+				</div>
+			</div> </div>
+		</div>
+	</section>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 
-		<?php
-		while ( have_posts() ) : the_post();
+			<?php
+			while ( have_posts() ) : the_post();
 
-			get_template_part( 'template-parts/content', get_post_type() );
+				get_template_part( 'template-parts/content', 'single' );
 
-			the_post_navigation();
-
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
-
-		endwhile; // End of the loop.
-		?>
+			endwhile; // End of the loop.
+			?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
+	<?php get_template_part( 'partials/get', 'tweets' )  ?>
+
 <?php
-get_sidebar();
 get_footer();

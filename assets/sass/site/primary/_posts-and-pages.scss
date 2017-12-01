@@ -1,22 +1,259 @@
-.sticky {
-	display: block;
+/*================================
+=            GENERAL            =
+================================*/
+
+#primary {
+	float: left;
+	width: 100%;
+	background: white;
+	padding: 40px 0;
+
+	h1, h2 {
+		text-transform: uppercase;
+		font-size: 42px;
+	}
+
+	article {
+
+		.pad {
+			padding-right: 2.3559%;
+		}
+	}
+
+	.columns {
+
+		img {
+			display: block;
+		}
+
+		.more {
+
+			border: 2px solid $color__brand-primary;
+			padding: 15px;
+			text-align: center;
+			text-transform: uppercase;
+			display: block;
+			margin-top: 30px;
+		}
+	}
 }
 
-.hentry {
-	margin: 0 0 1.5em;
+#subtypes {
+	float: left;
+	width: 100%;
+	padding: 30px 0;
+	background-color: $color__background-footer;
+	color: white;
+
+	.row {
+		margin-bottom: 30px;
+
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+	}
+
+	.type {
+		img {
+			display: block;
+			width: 100%;
+		}
+	}
 }
 
-.updated:not(.published) {
-	display: none;
+
+#tweets {
+	float: left;
+	width: 100%;
+	padding: 110px 0 60px 0;
+	
+	.tweet-box {
+		text-align: center;
+		width: 100%;
+
+		header {
+			border: 0;
+			margin: 0;
+
+			h2 {
+				margin: 0 0 30px;
+				font-family: 'Zona Pro Black';
+				font-size: 42px;
+				text-transform: uppercase;
+				color: $color__brand-primary;
+			}
+		}
+
+		p {
+			margin-bottom: 0;
+			padding: 0;
+		}
+
+
+		.slick-prev, .slick-next {
+			background-repeat: no-repeat;
+			background-size: 100% auto;
+			width: 50px;
+			height: 50px;
+
+			&:before {
+				display: none;
+			}
+		}
+
+		.slick-next {
+			background-image: url(assets/images/right-chevron.svg);
+		}
+		.slick-prev {
+			background-image: url(assets/images/left-chevron.svg);
+		}
+	}
 }
 
-.page-content,
-.entry-content,
-.entry-summary {
-	margin: 1.5em 0 0;
+#mappy {
+	float: left;
+	width: 100%;
+	padding: 60px 0;
+	background-color: #f9f9f9;
 }
 
-.page-links {
-	clear: both;
-	margin: 0 0 1.5em;
+#featureimage {
+	height: 60vh;
+	position: relative;
+
+	.caption {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 0;
+
+		.copy {
+
+			h1 {
+				color: white;
+				margin: 0 0 30px;
+				font-family: 'Zona Pro Black';
+				font-size: 42px;
+			}
+
+			p {
+				color: white;
+				margin: 0 0 30px;
+			}
+
+			a {
+				color: white;
+				border: 1px solid white;
+				padding: 10px 20px;
+				text-decoration: none;
+				text-transform: uppercase;
+			}
+		}
+	}
+}
+
+/*================================
+=            HOMEPAGE            =
+================================*/
+
+.home {
+
+	#featureimage {
+		height: 100vh;
+	}
+
+	#primary {
+		padding: 40px 0;
+
+		h1 {
+			text-transform: uppercase;
+			font-size: 42px;
+		}
+
+		article {
+
+			.pad {
+				padding-left: 2.3559%;
+				border-left: 2px solid $color__brand-primary;
+			}
+		}
+	}
+
+	#cta {
+		float: left;
+		width: 100%;
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 50vh;
+		padding: 100px 0;
+
+		.text {
+
+			h1 {
+				color: white;
+				margin: 0 0 30px;
+				font-family: 'Zona Pro Black';
+				font-size: 42px;
+				text-transform: uppercase;
+			}
+
+			p {
+				color: white;
+				margin: 0 0 30px;
+			}
+
+			a {
+				color: white;
+				border: 1px solid white;
+				padding: 10px 20px;
+				text-decoration: none;
+				text-transform: uppercase;
+			}
+		}
+	}
+}
+
+/*============================
+=            NEWS            =
+============================*/
+
+.blog {
+
+	#primary {
+
+		.columns {
+
+			article {
+				margin-bottom: 40px;
+				padding-bottom: 40px;
+				border-bottom: 1px solid #ccc;
+
+				header {
+					margin-bottom: 20px;
+
+					h1, h2 {
+						margin-bottom: 0;
+						font-size: 30px;
+
+						a {
+							text-decoration: none;
+							color: inherit;
+
+							&:hover {
+								color: $color__brand-primary;
+							}
+						}
+					}
+				}
+			}
+
+			img {
+				display: block;
+				height: auto;
+				margin-bottom: 40px;
+			}
+		}
+	}
 }

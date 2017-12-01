@@ -1,0 +1,62 @@
+// Variables
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+$color__background-body: #fff !default;
+$color__background-screen: #ffffff !default;
+$color__background-hr: #242424 !default;
+$color__background-footer: #242424 !default;
+$color__background-button: #ffffff !default;
+$color__background-pre: #f9f9f9 !default;
+$color__background-ins: #f9f9f9 !default;
+
+$color__brand-primary: #f6283b !default; // RED
+$color__light-grey: #eee !default; // grey
+
+$color__text-screen: #464646 !default; // dark grey
+$color__text-input: #464646 !default;
+$color__text-input-focus: #464646 !default;
+$color__link: $color__brand-primary !default;
+$color__link-visited: $color__brand-primary !default;
+$color__link-hover: $color__brand-primary !default;
+$color__text-main: #464646 !default;
+
+$color__border-button: $color__brand-primary !default;
+$color__border-button-hover: $color__brand-primary !default;
+$color__border-button-focus: $color__brand-primary !default;
+$color__border-input: $color__brand-primary !default;
+$color__border-abbr: $color__brand-primary !default;
+
+// Breakpoints
+$bp-larger-than-mobile    : "min-width: 400px" !default;
+$bp-larger-than-phablet   : "min-width: 550px" !default;
+$bp-larger-than-tablet    : "min-width: 750px" !default;
+$bp-larger-than-desktop   : "min-width: 1000px" !default;
+$bp-larger-than-desktophd : "min-width: 1200px" !default;
+
+// Colors
+$light-grey: $color__light-grey !default;
+$dark-grey: $color__background-footer !default;
+$primary-color: $color__brand-primary !default;
+$secondary-color: $color__brand-primary !default;
+$border-color: $color__brand-primary !default;
+$link-color: $color__brand-primary !default;
+$font-color: $color__text-main !default;
+
+// Typography
+$font__main: 'Zona Pro light', sans-serif;
+$font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+$font__pre: "Courier 10 Pitch", Courier, monospace;
+$font__line-height-body: 1.5;
+$font__line-height-pre: 1.6;
+$font-family: $font__main !default;
+
+//Grid Variables
+$container-width: 1500px !default;
+$container-width-larger-than-mobile: 85% !default;
+$container-width-larger-than-phablet: 80% !default;
+$total-columns: 12 !default;
+$column-width: 100 / $total-columns !default; // calculates individual column width based off of # of columns
+$column-margin: 2.3559% !default; // space between columns
+
+// Misc
+$global-radius: 0px !default;

@@ -13,40 +13,54 @@
  */
 
 get_header(); ?>
+<?php $featureimage = wp_get_attachment_url( get_post_thumbnail_id(get_option( 'page_for_posts' ))); ?>
+
+	<section id="featureimage" class="section parallax-window" data-bleed="50" data-parallax="scroll" data-image-src="<?php echo $featureimage; ?>">
+		<div class="caption">
+			<div class="table"> <div class="cell middle">
+				<div class="container">
+					<div class="copy row">
+						<div class="four columns">
+							<h1><?php the_field( 'intro_title', get_option( 'page_for_posts' ) ); ?></h1>
+							<p><?php the_field( 'intro_text', get_option( 'page_for_posts' ) ); ?></p>
+							<?php if (get_field( 'intro_link' )): ?>
+							<a href="<?php the_field( 'intro_link' ); ?>">Find Out More</a>
+							<?php endif; ?>
+						</div>
+					</div>
+				</div>
+			</div> </div>
+		</div>
+	</section>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 
-		<?php
-		if ( have_posts() ) :
+		<div class="container">
+				
+				<div class="row">
 
-			if ( is_home() && ! is_front_page() ) : ?>
-				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-				</header>
+					<div class="pad eight columns">
+					
+						<?php
+						while ( have_posts() ) : the_post();
 
-			<?php
-			endif;
+							get_template_part( 'template-parts/content', get_post_format( ) );
 
-			/* Start the Loop */
-			while ( have_posts() ) : the_post();
+						endwhile; // End of the loop.
+						?>
 
-				/*
-				 * Include the Post-Format-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', get_post_format() );
+					</div>
 
-			endwhile;
+					<div class="pad four columns">
+					
+						<?php get_sidebar(  ) ?>
 
-			the_posts_navigation();
+					</div>
 
-		else :
+				</div> 
 
-			get_template_part( 'template-parts/content', 'none' );
-
-		endif; ?>
+			</div>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

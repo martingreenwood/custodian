@@ -26,22 +26,33 @@ Lead Developr @WEAREBEARD
 <body <?php body_class(); ?>>
 <div id="page" class="site">
 
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-				the_custom_logo();
-			?>
+	<div id="loader">
+		<div id="loading">
+			<div id="progstat"></div>
+			<div id="progress"></div>
 		</div>
+	</div>
 
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'custodian' ); ?></button>
-			<?php
-				wp_nav_menu( array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				) );
-			?>
-		</nav>
+	<header id="masthead" class="site-header">
+		<div class="container">
+			<div class="row">
+				<div class="site-branding">
+					<?php
+						the_custom_logo();
+					?>
+				</div>
+
+				<nav id="site-navigation" class="main-navigation">
+					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'custodian' ); ?></button>
+					<?php
+						wp_nav_menu( array(
+							'theme_location' => 'menu-1',
+							'menu_id'        => 'primary-menu',
+						) );
+					?>
+				</nav>
+			</div>
+		</div>
 	</header>
 
 	<div id="content" class="site-content">

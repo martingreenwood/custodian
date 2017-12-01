@@ -31,13 +31,12 @@ Text Domain: custodian
 	## Captions
 	## Galleries
 --------------------------------------------------------------*/
-@import "variables-site/variables-site";
 @import "mixins/mixins-master";
 
 /*--------------------------------------------------------------
-# Normalize
+## Skeleton
 --------------------------------------------------------------*/
-@import "normalize";
+@import "skeleton";
 
 /*--------------------------------------------------------------
 # Typography
