@@ -1251,6 +1251,8 @@ a {
     float: none;
     display: table-cell;
     vertical-align: middle; }
+    #sup .columns img {
+      width: 100%; }
 
 /*================================
 =            HOMEPAGE            =
