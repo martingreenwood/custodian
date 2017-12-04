@@ -6,7 +6,7 @@
 	float: left;
 	width: 100%;
 	background: white;
-	padding: 40px 0;
+	padding: 80px 0;
 
 	h1, h2 {
 		text-transform: uppercase;
@@ -65,7 +65,7 @@
 #tweets {
 	float: left;
 	width: 100%;
-	padding: 110px 0 60px 0;
+	padding: 80px 0;
 	
 	.tweet-box {
 		text-align: center;
@@ -113,7 +113,7 @@
 #mappy {
 	float: left;
 	width: 100%;
-	padding: 60px 0;
+	padding: 80px 0;
 	background-color: #f9f9f9;
 }
 
@@ -154,6 +154,53 @@
 	}
 }
 
+#sects {
+	float: left;
+	width: 100%;
+	padding: 80px 0;
+	background-color: #f9f9f9;
+
+	.type-page {
+		
+		img {
+			width: 160px;
+			margin: 0 auto 40px auto;
+		}
+
+		h3 {
+			font-size: 20px;
+			line-height: 1;
+			text-transform: uppercase;
+			margin-bottom: 20px;
+		}
+	}
+}
+
+#sup {
+	float: left;
+	width: 100%;
+	padding: 80px 0;
+	background-color: #f9f9f9;
+
+	.row {
+		margin-bottom: 80px;
+		padding-bottom: 80px;
+		border-bottom: 1px solid #ccc;
+
+		&:last-of-type {
+			margin-bottom: 0;
+			border-bottom: 0;
+			padding-bottom: 0;
+		}
+	}
+
+	.columns {
+		float: none;
+		display: table-cell;
+		vertical-align: middle;
+	}
+}
+
 /*================================
 =            HOMEPAGE            =
 ================================*/
@@ -165,7 +212,6 @@
 	}
 
 	#primary {
-		padding: 40px 0;
 
 		h1 {
 			text-transform: uppercase;
@@ -212,6 +258,10 @@
 				text-transform: uppercase;
 			}
 		}
+	}
+
+	#tweets {
+		background-color: white;
 	}
 }
 

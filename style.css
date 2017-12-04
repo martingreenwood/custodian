@@ -1128,7 +1128,7 @@ a {
   float: left;
   width: 100%;
   background: white;
-  padding: 40px 0; }
+  padding: 80px 0; }
   #primary h1, #primary h2 {
     text-transform: uppercase;
     font-size: 42px; }
@@ -1161,7 +1161,7 @@ a {
 #tweets {
   float: left;
   width: 100%;
-  padding: 110px 0 60px 0; }
+  padding: 80px 0; }
   #tweets .tweet-box {
     text-align: center;
     width: 100%; }
@@ -1192,7 +1192,7 @@ a {
 #mappy {
   float: left;
   width: 100%;
-  padding: 60px 0;
+  padding: 80px 0;
   background-color: #f9f9f9; }
 
 #featureimage {
@@ -1220,20 +1220,51 @@ a {
       text-decoration: none;
       text-transform: uppercase; }
 
+#sects {
+  float: left;
+  width: 100%;
+  padding: 80px 0;
+  background-color: #f9f9f9; }
+  #sects .type-page img {
+    width: 160px;
+    margin: 0 auto 40px auto; }
+  #sects .type-page h3 {
+    font-size: 20px;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-bottom: 20px; }
+
+#sup {
+  float: left;
+  width: 100%;
+  padding: 80px 0;
+  background-color: #f9f9f9; }
+  #sup .row {
+    margin-bottom: 80px;
+    padding-bottom: 80px;
+    border-bottom: 1px solid #ccc; }
+    #sup .row:last-of-type {
+      margin-bottom: 0;
+      border-bottom: 0;
+      padding-bottom: 0; }
+  #sup .columns {
+    float: none;
+    display: table-cell;
+    vertical-align: middle; }
+
 /*================================
 =            HOMEPAGE            =
 ================================*/
 .home #featureimage {
   height: 100vh; }
 
-.home #primary {
-  padding: 40px 0; }
-  .home #primary h1 {
-    text-transform: uppercase;
-    font-size: 42px; }
-  .home #primary article .pad {
-    padding-left: 2.3559%;
-    border-left: 2px solid #f6283b; }
+.home #primary h1 {
+  text-transform: uppercase;
+  font-size: 42px; }
+
+.home #primary article .pad {
+  padding-left: 2.3559%;
+  border-left: 2px solid #f6283b; }
 
 .home #cta {
   float: left;
@@ -1257,6 +1288,9 @@ a {
     padding: 10px 20px;
     text-decoration: none;
     text-transform: uppercase; }
+
+.home #tweets {
+  background-color: white; }
 
 /*============================
 =            NEWS            =

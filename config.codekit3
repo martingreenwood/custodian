@@ -1061,11 +1061,31 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/assets\/images\/industrial.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/assets\/images\/industrial.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/assets\/images\/left-chevron.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
 		"oAP": "\/assets\/images\/left-chevron.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/assets\/images\/local-auth.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/assets\/images\/local-auth.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -1087,6 +1107,16 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "\/assets\/images\/logo.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/assets\/images\/plane.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/assets\/images\/plane.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -1995,6 +2025,20 @@
 		"oAP": "\/page-login.php",
 		"oF": 0
 		},
+	"\/page-product-support.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/page-product-support.php",
+		"oF": 0
+		},
+	"\/page-vehicles.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/page-vehicles.php",
+		"oF": 0
+		},
 	"\/page.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -2140,6 +2184,13 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/template-parts\/content-single.php",
+		"oF": 0
+		},
+	"\/template-parts\/content-vehicles.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/template-parts\/content-vehicles.php",
 		"oF": 0
 		},
 	"\/template-parts\/content.php": {

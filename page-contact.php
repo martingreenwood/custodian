@@ -72,11 +72,11 @@ get_header(); ?>
 							<li id="africa">
 
 								<!-- Africa -->
-								<h1>Affica</h1>
+								<h2>Affica</h2>
 								<p>
 									Carmichael Support Services Ltd<br>
 									Address in<br>
-									Affrica<br>
+									Affica<br>
 									<br>
 									Tel: +44 (0) 1905 420 044<br>
 									Fax: +44 (0) 1905 420 120<br>
@@ -87,7 +87,7 @@ get_header(); ?>
 							<li id="asia">
 
 								<!-- Asia -->
-								<h1>Asia</h1>
+								<h2>Asia</h2>
 								<p>
 									Carmichael Support Services Ltd<br>
 									Address in<br>
@@ -102,7 +102,7 @@ get_header(); ?>
 							<li id="australia">
 
 								<!-- Australia -->
-								<h1>Ausrralia</h1>
+								<h2>Australia</h2>
 								<p>
 									Carmichael Support Services Ltd<br>
 									Address in<br>
@@ -117,7 +117,7 @@ get_header(); ?>
 							<li id="europe">
 
 								<!-- Europe -->
-								<h1>Europe</h1>
+								<h2>Europe</h2>
 								<p>
 									Carmichael Support Services Ltd<br>
 									Address in<br>
@@ -132,11 +132,11 @@ get_header(); ?>
 							<li id="north-america">
 
 								<!-- North America -->
-								<h1>North Ameria</h1>
+								<h2>North America</h2>
 								<p>
 									Carmichael Support Services Ltd<br>
 									Address in<br>
-									North Ameria<br>
+									North America<br>
 									<br>
 									Tel: +44 (0) 1905 420 044<br>
 									Fax: +44 (0) 1905 420 120<br>
@@ -147,11 +147,11 @@ get_header(); ?>
 							<li id="south-america">
 
 								<!-- South America -->
-								<h1>South Affrica</h1>
+								<h2>South America</h2>
 								<p>
 									Carmichael Support Services Ltd<br>
 									Address in<br>
-									South Ameria<br>
+									South America<br>
 									<br>
 									Tel: +44 (0) 1905 420 044<br>
 									Fax: +44 (0) 1905 420 120<br>
