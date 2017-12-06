@@ -751,10 +751,6 @@ textarea {
 h1, h2, h3, h4, h5, h6 {
   clear: both;
   font-family: 'Zona Pro Black';
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  -ms-hyphens: auto;
-  hyphens: auto;
   line-height: 1; }
 
 p:last-of-type {
