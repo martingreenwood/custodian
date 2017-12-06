@@ -47,7 +47,80 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-	<section id="sects">
+	<section id="sup">
+		<div class="container">
+
+		<?php
+		$counter = 0;
+		if( have_rows('supporting_info') ):
+		while ( have_rows('supporting_info') ) : the_row();
+		$ttl = get_sub_field( 'title' );
+		$img = get_sub_field( 'image' );
+		$txt = get_sub_field( 'content' );
+		?>
+
+		<?php if ($counter % 2 === 0) :?>
+
+			<div class="row">
+
+				<div class="table">
+
+					<div class="cell middle">
+
+						<div class="columns five">
+							<img src="<?php echo $img["url"] ?>" alt="">
+						</div>
+
+						<div class="columns two">&nbsp;</div>
+
+						<div class="columns five">
+							<h3><?php echo $ttl ?></h3>
+							<?php echo $txt; ?>
+						</div>
+						
+					</div>
+					
+				</div>
+				
+			</div>
+
+		<?php else: ?>
+
+			<div class="row">
+
+				<div class="table">
+
+					<div class="cell middle">
+
+						<div class="columns five">
+							<h3><?php echo $ttl ?></h3>
+							<?php echo $txt; ?>
+						</div>
+
+						<div class="columns two">&nbsp;</div>
+
+						<div class="columns five">
+							<img src="<?php echo $img["url"] ?>" alt="">
+						</div>
+						
+					</div>
+					
+				</div>
+				
+			</div>
+
+		<?php endif; ?>
+
+		<?php
+		$counter++;
+		endwhile;
+		endif;
+		?>
+			
+		</div>
+	</section>
+
+<!-- 	<section id="sects">
 		<div class="container">
 			<div class="row">
 
@@ -79,7 +152,7 @@ get_header(); ?>
 			?>
 				
 			</div>
-		</div>
+		</div> -->
 	</section>
 
 	<?php get_template_part( 'partials/get', 'tweets' )  ?>

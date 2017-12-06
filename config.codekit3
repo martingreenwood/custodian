@@ -1051,6 +1051,16 @@
 		"oAP": "\/assets\/fonts\/ZonaPro-Thin-preview.html",
 		"oF": 0
 		},
+	"\/assets\/images\/auth.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/assets\/images\/auth.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/assets\/images\/down-arrow.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -1060,6 +1070,38 @@
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
+		},
+	"\/assets\/images\/global.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/assets\/images\/global.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/assets\/images\/globe.png": {
+		"ft": 32768,
+		"iS": 16922,
+		"oA": 0,
+		"oAP": "\/assets\/images\/globe.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/images\/industrial.png": {
+		"ft": 32768,
+		"iS": 11672,
+		"oA": 0,
+		"oAP": "\/assets\/images\/industrial.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/assets\/images\/industrial.svg": {
 		"ft": 2097152,
@@ -1076,16 +1118,6 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "\/assets\/images\/left-chevron.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/assets\/images\/local-auth.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/assets\/images\/local-auth.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -1141,6 +1173,26 @@
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
+		},
+	"\/assets\/images\/special.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/assets\/images\/special.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/assets\/images\/support.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/assets\/images\/support.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		},
 	"\/assets\/js\/base-min.js": {
 		"ft": 64,

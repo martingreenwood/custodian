@@ -41,7 +41,7 @@
 #subtypes {
 	float: left;
 	width: 100%;
-	padding: 30px 0;
+	padding: 60px 0;
 	background-color: $color__background-footer;
 	color: white;
 
@@ -54,9 +54,27 @@
 	}
 
 	.type {
+
+		a {
+			color: white;
+			text-decoration: none;
+
+			&:hover {
+				color: $color__brand-primary;
+			}
+		}
+
 		img {
 			display: block;
-			width: 100%;
+			width: 80%;
+			margin: 0 auto;
+		}
+
+		h4 {
+			text-align: center;
+			margin: 20px 0 0 0;
+			font-size: 19px;
+			text-transform: uppercase;
 		}
 	}
 }
@@ -136,6 +154,7 @@
 				margin: 0 0 30px;
 				font-family: 'Zona Pro Black';
 				font-size: 42px;
+				text-transform: uppercase;
 			}
 
 			p {
@@ -146,9 +165,12 @@
 			a {
 				color: white;
 				border: 1px solid white;
-				padding: 10px 20px;
+				padding: 15px 25px;
+				margin-top: 15px;
 				text-decoration: none;
 				text-transform: uppercase;
+				font-family: 'Zona Pro Bold';
+				font-size: 16px;
 			}
 		}
 	}

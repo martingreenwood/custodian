@@ -1147,16 +1147,27 @@ a {
 #subtypes {
   float: left;
   width: 100%;
-  padding: 30px 0;
+  padding: 60px 0;
   background-color: #242424;
   color: white; }
   #subtypes .row {
     margin-bottom: 30px; }
     #subtypes .row:last-of-type {
       margin-bottom: 0; }
+  #subtypes .type a {
+    color: white;
+    text-decoration: none; }
+    #subtypes .type a:hover {
+      color: #f6283b; }
   #subtypes .type img {
     display: block;
-    width: 100%; }
+    width: 80%;
+    margin: 0 auto; }
+  #subtypes .type h4 {
+    text-align: center;
+    margin: 20px 0 0 0;
+    font-size: 19px;
+    text-transform: uppercase; }
 
 #tweets {
   float: left;
@@ -1209,16 +1220,20 @@ a {
       color: white;
       margin: 0 0 30px;
       font-family: 'Zona Pro Black';
-      font-size: 42px; }
+      font-size: 42px;
+      text-transform: uppercase; }
     #featureimage .caption .copy p {
       color: white;
       margin: 0 0 30px; }
     #featureimage .caption .copy a {
       color: white;
       border: 1px solid white;
-      padding: 10px 20px;
+      padding: 15px 25px;
+      margin-top: 15px;
       text-decoration: none;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      font-family: 'Zona Pro Bold';
+      font-size: 16px; }
 
 #sects {
   float: left;
