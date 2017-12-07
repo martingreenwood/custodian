@@ -2077,6 +2077,13 @@
 		"oAP": "\/page-login.php",
 		"oF": 0
 		},
+	"\/page-no-side.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/page-no-side.php",
+		"oF": 0
+		},
 	"\/page-product-support.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -2208,6 +2215,13 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/template-parts\/content-home.php",
+		"oF": 0
+		},
+	"\/template-parts\/content-no-side.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/template-parts\/content-no-side.php",
 		"oF": 0
 		},
 	"\/template-parts\/content-none.php": {

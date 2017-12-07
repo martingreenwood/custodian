@@ -21,14 +21,6 @@
 				?>
 			</div><!-- .entry-content -->
 
-			<div class="four columns">
-				<?php $content_image = get_field( 'content_image' ); ?>
-				<img src="<?php echo $content_image['url']; ?>" alt="">
-				<?php if(get_field( 'content_image_link' )): ?>
-				<a class="more" href="<?php echo get_field( 'content_image_link' ); ?>" title="">WOULD YOU LIKE MORE INFORMATION?</a>
-				<?php endif; ?>
-			</div><!-- .entry-header -->
-
 		</div> 
 
 	</div>
