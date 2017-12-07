@@ -18,9 +18,9 @@
 		<div class="container">
 		
 			<div class="footer-logo row">
-				<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'custodian' ) ); ?>">
-					<img src="http://placehold.it/200x75" alt="">
-				</a>
+				<?php
+					the_custom_logo();
+				?>
 			</div>
 
 			<div class="site-info row">

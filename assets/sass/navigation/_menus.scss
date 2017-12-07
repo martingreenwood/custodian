@@ -1,7 +1,12 @@
 .main-navigation {
 	display: block;
 	float: right;
-	padding: 23.45px 0;
+	padding: 8.73px 0 0;
+
+	@media (#{$bp-larger-than-tablet}) {
+		padding: 23.45px 0;
+	}
+
 
 	-webkit-transition: all .25s linear;
 	   -moz-transition: all .25s linear;
@@ -111,10 +116,97 @@
 	display: block;
 }
 
-@media screen and (min-width: 37.5em) {
+.menu-toggle {
+	font-family: "Zona Pro Bold", sans-serif;
+	border: 0;
+	outline: 0;
+	box-shadow: 0;
+	padding: 0;
+	color: white;
+	text-transform: uppercase;
+	font-size: 15px;
+	height: 14px;
+	padding-left: 30px;
+	position: relative;
+	margin-bottom: 0;
+	line-height: 1;
+	z-index: 999;
+
+	&:hover, &:focus {
+		color: white;
+	}
+
+	span {
+		content: "";
+		position: absolute;
+		left: 14px;
+		width: 3px;
+		height: 17px;
+		background: white;
+		top: 50%;
+		margin-top: -9px;
+		transform: rotate(45deg);
+
+		&:before {
+			content: "";
+			position: absolute;
+			left: -6px;
+			width: 3px;
+			height: 9px;
+			background: white;
+			top: 4px;
+		}
+
+		&:after {
+			content: "";
+			position: absolute;
+			left: 6px;
+			width: 3px;
+			height: 9px;
+			background: white;
+			margin-top: 4px;
+		}
+	}
+}
+
+.main-navigation {
+
+	&.toggled {
+
+		.menu-main-container {
+			background-color: rgba(0,0,0,0.8);
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100vw;
+			height: 100vh;
+			display: table;
+		}
+
+		ul {
+			display: table-cell;
+			margin: 0 auto;
+			vertical-align: middle;
+
+			li {
+				width: 106%;
+				text-align: center;
+				line-height: 2.5;
+				margin: 0;
+
+				a {
+					font-size: 19px;
+				}
+			}
+		}
+	}
+}
+
+@media (#{$bp-larger-than-desktop}) {
 	.menu-toggle {
 		display: none;
 	}
+
 	.main-navigation ul {
 		display: block;
 	}

@@ -1,6 +1,9 @@
 #secondary {
-	border-left: 2px solid red;
-	padding-left: 40px;
+
+	@media (#{$bp-larger-than-tablet}) {
+		border-left: 2px solid red;
+		padding-left: 40px;
+	}
 
 	h2.widget-title {
 		margin-bottom: 15px;

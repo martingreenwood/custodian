@@ -35,6 +35,12 @@
 		
 		img {
 			display: block;
+			width: 90px;
+			height: auto;
+
+			@media (#{$bp-larger-than-tablet}) {
+				width: 150px;
+			}
 		}
 	}
 
@@ -50,9 +56,23 @@
 
 	.contact-info {
 
+		.office {
+			margin-bottom: 20px;
+
+			@media (#{$bp-larger-than-tablet}) {
+				margin-bottom: 0;
+			}
+		}
+
 	}
 
 	.lastest-news {
+
+		li {
+			&:last-of-type {
+				margin-bottom: 0;
+			}
+		}
 
 
 		a {
@@ -69,13 +89,26 @@
 
 		.copy {
 			float: left;
-			width: 50%;
+			width: 100%;
+			text-align: center;
+			margin-bottom: 20px;
+
+			@media (#{$bp-larger-than-tablet}) {
+				width: 50%;
+				text-align: left;
+				margin-bottom: 0;
+			}
 		}
 
 		.footer-nav {
 			float: left;
-			width: 50%;
-			text-align: right;
+			width: 100%;
+			text-align: center;
+
+			@media (#{$bp-larger-than-tablet}) {
+				width: 50%;
+				text-align: right;
+			}
 
 			ul {
 				margin: 0;
@@ -83,6 +116,10 @@
 				li {
 					display: inline-block;
 					margin-left: 15px;
+
+					&:first-of-type {
+						margin-left: 0;
+					}
 
 					a {
 						color: white;

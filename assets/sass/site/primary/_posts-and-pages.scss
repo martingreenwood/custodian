@@ -24,6 +24,11 @@
 
 		img {
 			display: block;
+			margin-top: 40px;
+
+			@media (#{$bp-larger-than-tablet}) {
+				margin-top: 0;
+			}
 		}
 
 		.more {
@@ -41,9 +46,13 @@
 #subtypes {
 	float: left;
 	width: 100%;
-	padding: 60px 0;
+	padding: 60px 0 20px 0;
 	background-color: $color__background-footer;
 	color: white;
+
+	@media (#{$bp-larger-than-tablet}) {
+		padding: 60px 0;
+	}
 
 	.row {
 		margin-bottom: 30px;
@@ -55,6 +64,11 @@
 
 	.type {
 
+		@media (#{$bp-smaller-than-tablet}) { 
+			width: 50%;
+			margin-bottom: 40px;
+		}
+
 		a {
 			color: white;
 			text-decoration: none;
@@ -64,10 +78,14 @@
 			}
 		}
 
-		img {
+		img, svg {
 			display: block;
 			width: 80%;
 			margin: 0 auto;
+		}
+
+		svg:hover path {
+			fill: $color__brand-primary;
 		}
 
 		h4 {
@@ -107,6 +125,14 @@
 			padding: 0;
 		}
 
+		.tweet {
+			padding: 0 40px;
+
+			@media (#{$bp-larger-than-tablet}) { 
+				padding: 0;
+			}
+		}
+
 
 		.slick-prev, .slick-next {
 			background-repeat: no-repeat;
@@ -136,8 +162,18 @@
 }
 
 #featureimage {
-	height: 60vh;
+	height: 100vh;
 	position: relative;
+
+	@media (#{$bp-larger-than-tablet}) { 
+		height: 60vh;
+	}
+
+	.columns {
+		@media (#{$bp-smaller-than-tablet}) { 
+			width: 100%;
+		}
+	}
 
 	.caption {
 		position: absolute;
@@ -153,8 +189,12 @@
 				color: white;
 				margin: 0 0 30px;
 				font-family: 'Zona Pro Black';
-				font-size: 42px;
+				font-size: 31px;
 				text-transform: uppercase;
+
+				@media (#{$bp-larger-than-tablet}) {
+					font-size: 42px;
+				}
 			}
 
 			p {
@@ -209,6 +249,9 @@
 		padding-bottom: 80px;
 		border-bottom: 1px solid #ccc;
 
+		@media (#{$bp-larger-than-tablet}) {
+		}
+
 		&:last-of-type {
 			margin-bottom: 0;
 			border-bottom: 0;
@@ -218,11 +261,31 @@
 
 	.columns {
 		float: none;
-		display: table-cell;
-		vertical-align: middle;
+
+		@media (#{$bp-smaller-than-tablet}) { 
+			width: 100%;
+			margin-bottom: 20px;
+		}
+
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+
+		@media (#{$bp-larger-than-tablet}) {
+			display: table-cell;
+			vertical-align: middle;
+		}
 
 		img {
 			width: 100%;
+		}
+
+		&.two {
+			display: none;
+
+			@media (#{$bp-larger-than-tablet}) {
+				display: table-cell;
+			}
 		}
 	}
 }
@@ -235,20 +298,43 @@
 
 	#featureimage {
 		height: 100vh;
+
+		.caption {
+			background-color: rgba($color__brand-primary, 0.8);
+
+			@media (#{$bp-larger-than-desktop}) {
+				background-color: transparent;
+			}
+		}
 	}
 
 	#primary {
 
 		h1 {
 			text-transform: uppercase;
-			font-size: 42px;
+			font-size: 31px;
+			margin: 0;
+
+			@media (#{$bp-larger-than-tablet}) {
+				font-size: 42px;
+			}
+		}
+
+		header {
+			margin-bottom: 80px;
+
+			@media (#{$bp-larger-than-tablet}) {
+				margin-bottom: 0;
+			}
 		}
 
 		article {
 
 			.pad {
-				padding-left: 2.3559%;
-				border-left: 2px solid $color__brand-primary;
+				@media (#{$bp-larger-than-tablet}) {
+					padding-left: 2.3559%;
+					border-left: 2px solid $color__brand-primary;
+				}
 			}
 		}
 	}
@@ -258,8 +344,12 @@
 		width: 100%;
 		background-repeat: no-repeat;
 		background-size: cover;
-		height: 50vh;
+		height: auto;
 		padding: 100px 0;
+
+		@media (#{$bp-larger-than-tablet}) {
+			height: 50vh;
+		}
 
 		.text {
 
@@ -330,6 +420,17 @@
 				height: auto;
 				margin-bottom: 40px;
 			}
+		}
+	}
+}
+
+.single {
+
+	#secondary {
+		margin-top: 40px;
+
+		@media (#{$bp-larger-than-tablet}) {
+			margin-top: 0;
 		}
 	}
 }
