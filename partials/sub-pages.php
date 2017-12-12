@@ -13,7 +13,7 @@
 				<div class="two columns type">
 					<a href="<?php echo home_url( 'vehicles' ); ?>">
 						<img src="<?php echo get_template_directory_uri() ?>/assets/images/auth.svg" alt="">
-						<h4>Local Authority</h4>
+						<h4>Fire &amp; Rescue Services</h4>
 					</a>
 				</div>
 				<div class="two columns type">
