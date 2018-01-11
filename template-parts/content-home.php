@@ -18,7 +18,7 @@
 			<header class="four columns">
 				<h1>
 					<span>We Are</span><br>
-					<?php echo bloginfo( 'name' ); ?>
+					CSS
 				</h1>
 			</header><!-- .entry-header -->
 

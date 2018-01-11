@@ -59,8 +59,8 @@ get_header(); ?>
 						<ul class="continents">
 							<?php
 							$count = 1;
-							if( have_rows('distributors', 'option') ):
-							while ( have_rows('distributors', 'option') ) : the_row();
+							if( have_rows('distributors', 'options') ):
+							while ( have_rows('distributors', 'options') ) : the_row();
 							?>
 							<li class="c<?php echo $count; ?>">
 								<a href="#<?php echo str_replace(" ", "-", strtolower(get_sub_field( 'country' ))) ?>"><?php the_sub_field( 'country' ); ?></a>
@@ -72,7 +72,7 @@ get_header(); ?>
 							?>
 						</ul>
 					</div>
-
+					
 					<div id="agents">
 						<ul>
 							<?php
