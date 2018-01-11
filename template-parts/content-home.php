@@ -15,14 +15,15 @@
 		
 		<div class="row">
 			
-			<header class="four columns">
+			<header class="three columns">
 				<h1>
-					<span>We Are</span><br>
+					We<br>
+					Are<br>
 					CSS
 				</h1>
 			</header><!-- .entry-header -->
 
-			<div class="pad eight columns">
+			<div class="pad nine columns">
 				<?php
 					the_content();
 				?>

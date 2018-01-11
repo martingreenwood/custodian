@@ -53,7 +53,7 @@
 							$loop = new WP_Query( $args );
 							while ( $loop->have_posts() ) : $loop->the_post();
 							?>
-							<li><?php the_title(); ?></li>
+							<li><a href="<?php the_permalink( ) ?>" title=""><?php the_title(); ?></a></li>
 							<?php
 							endwhile;
 							?>
