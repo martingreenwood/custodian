@@ -57,108 +57,37 @@ get_header(); ?>
 
 					<div id="map-continents">
 						<ul class="continents">
-							<li class="c1"><a href="#africa">Africa</a></li>
-							<li class="c2"><a href="#asia">Asia</a></li>
-							<li class="c3"><a href="#australia">Australia</a></li>
-							<li class="c4"><a href="#europe">Europe</a></li>
-							<li class="c5"><a href="#north-america">North America</a></li>
-							<li class="c6"><a href="#south-america">South America</a></li>
+							<?php
+							$count = 1;
+							if( have_rows('distributors', 'option') ):
+							while ( have_rows('distributors', 'option') ) : the_row();
+							?>
+							<li class="c<?php echo $count; ?>">
+								<a href="#<?php echo str_replace(" ", "-", strtolower(get_sub_field( 'country' ))) ?>"><?php the_sub_field( 'country' ); ?></a>
+							</li>
+							<?php
+							$count++;
+							endwhile;
+							endif;
+							?>
 						</ul>
 					</div>
 
-					<!-- CSSMap - list of addresses -->
 					<div id="agents">
 						<ul>
-							<li id="africa">
-
-								<!-- Africa -->
-								<h2>Affica</h2>
-								<p>
-									Carmichael Support Services Ltd<br>
-									Address in<br>
-									Affica<br>
-									<br>
-									Tel: +44 (0) 1905 420 044<br>
-									Fax: +44 (0) 1905 420 120<br>
-									Email: sales@carmichael-css.co.uk<br>
-								</p>
-
+							<?php
+							if( have_rows('distributors', 'options') ):
+							while ( have_rows('distributors', 'options') ) : the_row();
+							?>
+							<li id="<?php echo str_replace(" ", "-", strtolower(get_sub_field( 'country' ))) ?>">
+								<h2><?php the_sub_field( 'country' ); ?></h2>
+								<?php the_sub_field( 'details' ); ?>
 							</li>
-							<li id="asia">
-
-								<!-- Asia -->
-								<h2>Asia</h2>
-								<p>
-									Carmichael Support Services Ltd<br>
-									Address in<br>
-									Asia<br>
-									<br>
-									Tel: +44 (0) 1905 420 044<br>
-									Fax: +44 (0) 1905 420 120<br>
-									Email: sales@carmichael-css.co.uk<br>
-								</p>
-
-							</li>
-							<li id="australia">
-
-								<!-- Australia -->
-								<h2>Australia</h2>
-								<p>
-									Carmichael Support Services Ltd<br>
-									Address in<br>
-									Australia<br>
-									<br>
-									Tel: +44 (0) 1905 420 044<br>
-									Fax: +44 (0) 1905 420 120<br>
-									Email: sales@carmichael-css.co.uk<br>
-								</p>
-
-							</li>
-							<li id="europe">
-
-								<!-- Europe -->
-								<h2>Europe</h2>
-								<p>
-									Carmichael Support Services Ltd<br>
-									Address in<br>
-									Europe<br>
-									<br>
-									Tel: +44 (0) 1905 420 044<br>
-									Fax: +44 (0) 1905 420 120<br>
-									Email: sales@carmichael-css.co.uk<br>
-								</p>
-
-							</li>
-							<li id="north-america">
-
-								<!-- North America -->
-								<h2>North America</h2>
-								<p>
-									Carmichael Support Services Ltd<br>
-									Address in<br>
-									North America<br>
-									<br>
-									Tel: +44 (0) 1905 420 044<br>
-									Fax: +44 (0) 1905 420 120<br>
-									Email: sales@carmichael-css.co.uk<br>
-								</p>
-
-							</li>
-							<li id="south-america">
-
-								<!-- South America -->
-								<h2>South America</h2>
-								<p>
-									Carmichael Support Services Ltd<br>
-									Address in<br>
-									South America<br>
-									<br>
-									Tel: +44 (0) 1905 420 044<br>
-									Fax: +44 (0) 1905 420 120<br>
-									Email: sales@carmichael-css.co.uk<br>
-								</p>
-
-							</li>
+							<?php
+							$count++;
+							endwhile;
+							endif;
+							?>
 						</ul>
 					</div>
 					<!-- END OF THE CSSMap - list of addresses -->
