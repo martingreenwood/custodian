@@ -29,16 +29,12 @@
 					
 						<div class="office one-half column">
 							<h3>Head Office</h3>
-							<p>HEAD OFFICE<br>
-							Weir Lane, Worcester, WR2 4AY<br>
-							Tel: +44 (0) 1905 420 044<br>
-							Email: <a href="mailto:sales@sterlingrt.co.uk">sales@sterlingrt.co.uk</a></p>
+							<?php the_field( 'footer_address', 'options' ); ?>
 						</div>
 
 						<div class="office one-half column">
 							<h3>After Sales &amp; Service</h3>
-							<p>Tel: +44 (0) 1905 748 660<br>
-							Email: servicing@sterlingrt.co.uk</p>
+							<?php the_field( 'after_sales_info', 'options' ); ?>
 
 							<h3>Twitter</h3>
 							<p>Follow us on Twitter <a href="htpp://www.twitter.com/AmdacCarmichael" title="">@AmdacCarmichael</a></p>
@@ -52,11 +48,15 @@
 						
 						<h3>Latest News</h3>
 						<ul>
-							<li>Latest news story goes here</li>
-							<li>Another title of a news item here</li>
-							<li>Shorter title</li>
-							<li>Recent post would feature here</li>
-							<li>The fifth most recent news title goes here</li>
+							<?php
+							$args = array( 'post_type' => 'post', 'posts_per_page' => 5 );
+							$loop = new WP_Query( $args );
+							while ( $loop->have_posts() ) : $loop->the_post();
+							?>
+							<li><?php the_title(); ?></li>
+							<?php
+							endwhile;
+							?>
 						</ul>
 
 					</div>
