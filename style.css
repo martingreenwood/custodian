@@ -1539,6 +1539,13 @@ a {
     @media (min-width: 790px) {
       #colophon .footer-logo img {
         width: 150px; } }
+  #colophon .footer-logo svg {
+    display: block;
+    width: 100%;
+    height: auto; }
+    @media (min-width: 790px) {
+      #colophon .footer-logo svg {
+        width: 400px; } }
   #colophon .site-info hr {
     float: left;
     width: 100%;

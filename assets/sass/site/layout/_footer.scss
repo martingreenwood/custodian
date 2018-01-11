@@ -42,6 +42,16 @@
 				width: 150px;
 			}
 		}
+
+		svg {
+			display: block;
+			width: 100%;
+			height: auto;
+
+			@media (#{$bp-larger-than-tablet}) {
+				width: 400px;
+			}
+		}
 	}
 
 	.site-info {
