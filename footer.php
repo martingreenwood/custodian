@@ -18,7 +18,7 @@
 		<div class="container">
 		
 			<div class="footer-logo row">
-				<img src="<?php the_field( 'footer_logo' ); ?>" alt="">
+				<img src="<?php the_field( 'footer_logo', 'options' ); ?>" alt="">
 			</div>
 
 			<div class="site-info row">
