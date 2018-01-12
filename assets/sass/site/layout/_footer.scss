@@ -31,6 +31,20 @@
 		text-decoration: none;
 	}
 
+	.iso {
+		margin-top: 20px;
+
+		img, p {
+			display: inline-block;
+			vertical-align: middle;
+			margin-right: 10px;
+		}
+
+		img {
+			width: 65px;
+		}
+	}
+
 	.footer-logo {
 		
 		img {

@@ -69,6 +69,14 @@
 
 				<div class="copy">
 					<p>&copy; Copyright <?php echo date("Y"); ?> <?php echo bloginfo( 'name' ); ?>. All rights reserved.</p>
+					<div class="iso">
+						<div class="table">
+							<div class="cell middle">
+								<img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/isoqr.jpg" alt="">
+								<p>Cert No: 12150<br>ISO9001</p>
+							</div>
+						</div>
+					</div>
 				</div>
 
 				<div class="footer-nav">

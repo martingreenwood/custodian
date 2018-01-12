@@ -1532,6 +1532,14 @@ a {
   #colophon a {
     color: #f6283b;
     text-decoration: none; }
+  #colophon .iso {
+    margin-top: 20px; }
+    #colophon .iso img, #colophon .iso p {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 10px; }
+    #colophon .iso img {
+      width: 65px; }
   #colophon .footer-logo img {
     display: block;
     width: 90px;
