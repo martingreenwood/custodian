@@ -1553,7 +1553,7 @@ a {
     height: auto; }
     @media (min-width: 790px) {
       #colophon .footer-logo svg {
-        width: 400px; } }
+        width: 200px; } }
   #colophon .site-info hr {
     float: left;
     width: 100%;
