@@ -34,8 +34,9 @@
 							<h3>After Sales &amp; Service</h3>
 							<?php the_field( 'after_sales_info', 'options' ); ?>
 
-							<h3>Twitter</h3>
-							<p>Follow us on Twitter <a href="htpp://www.twitter.com/AmdacCarmichael" title="">@AmdacCarmichael</a></p>
+							<h3>Social</h3>
+							<p>Follow us on <a target="_blank" href="https://twitter.com/CarmichaelCSS" title="">Twitter</a></p>
+							<p>Follow us on <a target="_blank" href="https://www.facebook.com/CSS-Fire-and-Rescue-Vehicle-Specialists-499568613389596/" title="">Facebook</a></p>
 						</div>
 
 				</div>
