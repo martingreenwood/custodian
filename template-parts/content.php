@@ -20,5 +20,6 @@
 	<?php
 		the_excerpt();
 	?>
+	<p><a href="<?php the_permalink(); ?>" title="Read <?php the_title( ) ?>">Read More</a></p>
 
 </article><!-- #post-<?php the_ID(); ?> -->
