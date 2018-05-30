@@ -7,7 +7,7 @@
 		"uuidString": "FD74D996-30E9-420A-A1C2-EAA845216743"
 		}
 	],
-"creatorBuild": "26261",
+"creatorBuild": "26680",
 "files": {
 	"\/404.php": {
 		"cB": 0,
@@ -1171,11 +1171,23 @@
 	"\/assets\/images\/isoqr.jpg": {
 		"ft": 16384,
 		"iS": 13397,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/assets\/images\/isoqr.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/images\/isoqr2018.png": {
+		"ft": 32768,
+		"iS": 20261,
+		"oA": 0,
+		"oAP": "\/assets\/images\/isoqr2018.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"\/assets\/images\/left-chevron.svg": {
@@ -1232,6 +1244,7 @@
 	"\/assets\/images\/slide\/home-slide.jpg": {
 		"ft": 16384,
 		"iS": 1074753,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/assets\/images\/slide\/home-slide.jpg",
 		"oF": 0,
@@ -2361,7 +2374,8 @@
 	"creationDate": 529845726,
 	"displayValue": "custodian",
 	"displayValueWasSetByUser": 0,
-	"iconImageName": "meme-kanye"
+	"iconImageName": "meme-kanye",
+	"iconImageWasSetByUser": 0
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
@@ -2369,6 +2383,7 @@
 	"animateCSSInjections": 1,
 	"autoBuildNewItems": 1,
 	"autoprefixerBrowserString": "> 1%, last 2 versions, Firefox ESR, Opera 12.1",
+	"autoprefixerEnableIEGrid": 0,
 	"babelAuxiliaryCommentAfter": "",
 	"babelAuxiliaryCommentBefore": "",
 	"babelConfigFileHandlingType": 0,
@@ -4163,6 +4178,7 @@
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
+		"outputFormat": 0,
 		"quality": 100
 		},
 	"languageDefaultsJS": {

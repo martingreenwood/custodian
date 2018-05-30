@@ -73,7 +73,7 @@
 					<div class="iso">
 						<div class="table">
 							<div class="cell middle">
-								<img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/isoqr.jpg" alt="">
+								<img width="124" src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/isoqr2018.png" alt="">
 								<p>Cert No: 12150<br>ISO9001</p>
 							</div>
 						</div>
