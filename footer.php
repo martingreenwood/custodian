@@ -33,10 +33,6 @@
 						<div class="office one-half column">
 							<h3>After Sales &amp; Service</h3>
 							<?php the_field( 'after_sales_info', 'options' ); ?>
-
-							<h3>Social</h3>
-							<p>Follow us on <a target="_blank" href="https://twitter.com/CarmichaelCSS" title="">Twitter</a></p>
-							<p>Follow us on <a target="_blank" href="https://www.facebook.com/CSS-Fire-and-Rescue-Vehicle-Specialists-499568613389596/" title="">Facebook</a></p>
 						</div>
 
 				</div>
@@ -44,19 +40,10 @@
 				<div class="lastest-news five columns">
 
 					<div class="stories">
-						
-						<h3>Latest News</h3>
-						<ul>
-							<?php
-							$args = array( 'post_type' => 'post', 'posts_per_page' => 5 );
-							$loop = new WP_Query( $args );
-							while ( $loop->have_posts() ) : $loop->the_post();
-							?>
-							<li><a href="<?php the_permalink( ) ?>" title=""><?php the_title(); ?></a></li>
-							<?php
-							endwhile;
-							?>
-						</ul>
+
+						<h3>Social</h3>
+							<p>Follow us on <a target="_blank" href="https://twitter.com/firevehicle" title="">Twitter</a></p>
+							<p>Follow us on <a target="_blank" href="https://www.facebook.com/TerbergDTSUK" title="">Facebook</a></p>
 
 					</div>
 
@@ -70,14 +57,6 @@
 
 				<div class="copy">
 					<p>&copy; Copyright <?php echo date("Y"); ?> <?php echo bloginfo( 'name' ); ?>. All rights reserved.</p>
-					<div class="iso">
-						<div class="table">
-							<div class="cell middle">
-								<img width="124" src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/isoqr2018.png" alt="">
-								<p>Cert No: 12150<br>ISO9001</p>
-							</div>
-						</div>
-					</div>
 				</div>
 
 				<div class="footer-nav">

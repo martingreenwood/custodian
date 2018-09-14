@@ -47,59 +47,6 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-	<section id="mappy">
-
-		<div class="container">
-
-			<div class="row">
-
-				<div class="pad column twelve">
-
-					<div id="map-continents">
-						<ul class="continents">
-							<?php
-							$count = 1;
-							if( have_rows('distributors', 'options') ):
-							while ( have_rows('distributors', 'options') ) : the_row();
-							?>
-							<li class="c<?php echo $count; ?>">
-								<a href="#<?php echo str_replace(" ", "-", strtolower(get_sub_field( 'country' ))) ?>"><?php the_sub_field( 'country' ); ?></a>
-							</li>
-							<?php
-							$count++;
-							endwhile;
-							endif;
-							?>
-						</ul>
-					</div>
-					
-					<div id="agents">
-						<ul>
-							<?php
-							if( have_rows('distributors', 'options') ):
-							while ( have_rows('distributors', 'options') ) : the_row();
-							?>
-							<li id="<?php echo str_replace(" ", "-", strtolower(get_sub_field( 'country' ))) ?>">
-								<h2><?php the_sub_field( 'country' ); ?></h2>
-								<?php the_sub_field( 'details' ); ?>
-							</li>
-							<?php
-							$count++;
-							endwhile;
-							endif;
-							?>
-						</ul>
-					</div>
-					<!-- END OF THE CSSMap - list of addresses -->
-					
-				</div>
-				
-			</div>
-			
-		</div>
-		
-	</section>
-
 	<?php get_template_part( 'partials/get', 'tweets' )  ?>
 
 <?php
